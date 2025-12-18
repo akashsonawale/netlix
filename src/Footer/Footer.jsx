@@ -111,7 +111,7 @@ export default function Footer(){
           </div>
           <div className="line_separete">
             <div className="by flex">
-                <p style={{display:"flex"}}>Copyright <BsCCircle style={{margin:"5px 10px"}}/>2025 - {new Date().getFullYear()} All Rights are Reserved by <Link to="https://www.instagram.com/vijayji1137/" style={{marginLeft:"10px"}}>Akash Sonawale</Link></p>
+                <p style={{display:"flex"}}>Copyright <BsCCircle style={{margin:"5px 10px"}}/>202566 - {new Date().getFullYear()} All Rights are Reserved by <Link to="https://www.instagram.com/vijayji1137/" style={{marginLeft:"10px"}}>Akash Sonawale</Link></p>
                 <div className="icons">
                     <a href="https://www.instagram.com/vijayji1137/" className="icon1 icon--instagram">
                         <i><AiOutlineInstagram/></i>
