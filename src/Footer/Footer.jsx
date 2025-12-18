@@ -93,19 +93,19 @@ export default function Footer(){
             <div className="container__more">
                 <h2>Contact US</h2>
                 <ul>
-                    <li><a href="">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/vijayji1137/">Instagram</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Github</a></li>
+                    <li><a href="https://github.com/jitenderji1137">Github</a></li>
                 </ul><ul>
-                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/jitender1137/">LinkedIn</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Email</a></li>
+                    <li><button style={{background: 'none', border: 'none', color: 'inherit', cursor: 'pointer'}}>Email</button></li>
                 </ul>
                 <ul>
                     <li><Link to="/api-docs">API Docs</Link></li>
-                </ul>    
+                </ul>
             </div>
             </div>
           </div>

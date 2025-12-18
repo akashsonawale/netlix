@@ -1,5 +1,5 @@
 
-import React, { useState , useEffect } from 'react'
+import React, { useState , useEffect, useCallback } from 'react'
 import "./Videos/video.css"
 import axios from "axios";
 import {useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ function Videoprovider() {
     const [next,nextid] = useState("");
     const [nextresulr,nextresultvalue] = useState(false)
     const navigate = useNavigate();
-    function getdata(){
+    const getdata = useCallback(() => {
         if(nextresulr){
             return;
         }
@@ -20,12 +20,12 @@ function Videoprovider() {
             if(data.data.nextPageToken === undefined){
                 nextresultvalue(true)
             }
-            arrrvalue([...arrr,...dddaaatttaaa]);
+            arrrvalue(prev => [...prev, ...dddaaatttaaa]);
         })
-    }
+    }, [nextresulr, next]);
     useEffect(()=>{
         getdata();
-    },[])
+    },[getdata])
     return (
         <>
         <div className='mdiv'>

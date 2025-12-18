@@ -9,7 +9,7 @@ import { FaLink } from "react-icons/fa";
 import Swal from 'sweetalert2'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { SuperSEO } from "react-super-seo";
-import { PinterestIcon,EmailIcon,WhatsappIcon,FacebookIcon,TelegramIcon,TwitterIcon} from "react-share";
+import { PinterestIcon,EmailIcon,WhatsappIcon,FacebookIcon,TwitterIcon} from "react-share";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import Video from "../Videos/video";
@@ -78,7 +78,7 @@ export default function Player(){
             datavalue(res.data);
         })
      }
-    },[Page,Geans,Id])
+    },[Page,Geans,Id,Plateform])
     useEffect(() => {
         window.scrollTo(0,0);
     }, [Title,Plateform,Id]);
